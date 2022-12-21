@@ -7,12 +7,12 @@ package solution
 // and at the same position
 func TwoSum1(array []int, target int) []int {
 	m := map[int]bool{}
-	for _, num := range array {
-		potentialMatch := target - num
-		if _, found := m[potentialMatch]; found {
-			return []int{potentialMatch, num}
+	for _, x := range array {
+		y := target - x
+		if _, ok := m[y]; ok {
+			return []int{x, y}
 		}
-		m[num] = true
+		m[x] = true
 	}
 	return []int{}
 }
