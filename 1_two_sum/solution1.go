@@ -40,5 +40,4 @@ func TwoSum2(array []int, target int) []int {
 		}
 	}
 	return []int{}
-
 }
